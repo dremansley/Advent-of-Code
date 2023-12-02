@@ -19,8 +19,7 @@ const AdventDay2Challenge1 = () => {
 
                         return colours.map(countColor => {
                             const [count, color] = countColor.trim().split(' ');
-                            const countNumber = parseInt(count);
-                            return countNumber <= configuration[color]
+                            return parseInt(count) <= configuration[color]
                         });
                     })
                 })
